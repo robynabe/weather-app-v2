@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Locations from '../components/Locations';
+import '../index.css';
 
 function AppRouter() {
   

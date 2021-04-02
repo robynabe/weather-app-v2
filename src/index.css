@@ -1,13 +1,113 @@
+/* Default Styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Main Styles */
+.main-wrapper {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+form {
+  text-align: center;
+  margin: 20px;
+}
+.search-bar {
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px solid grey;
+}
+.btn-submit {
+  margin: 5px;
+  background: none;
+  border: none;
+}
+
+/* Current Section Styles */
+.current-container {
+  text-align: center;
+}
+.current-wrapper ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+/* Hourly Section Styles */
+.hourly-container {
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.hourly-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+/* Forecast Section Styles */
+.forecast-container {
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 20px auto;
+}
+.forecast-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.forecast-wrapper li {
+  flex: 33.3%;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+  width: 100%;
+  position: relative;
+}
+.nav-wrapper ul {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 15px 0;
+  list-style-type: none;
+  background-color: white;
+}
+
+/* My Locations Styles */
+.saved-locations {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid lightgray;
+  margin: 20px auto;
+}
+.saved-locations h2 {
+  flex: 50%;
+  margin: 0;
+}
+.saved-locations p {
+  flex: 25%;
+  margin: auto 0;
 }

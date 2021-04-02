@@ -2,7 +2,32 @@ const Forecast = () => {
     
     return (
         <div className="forecast-wrapper">
-            <p>6 day forecast</p>
+            <ul>
+                <li>
+                    <p>Icon</p>
+                    <p>Temp</p>
+                </li>
+                <li>
+                    <p>Icon</p>
+                    <p>Temp</p>
+                </li>
+                <li>
+                    <p>Icon</p>
+                    <p>Temp</p>
+                </li>
+                <li>
+                    <p>Icon</p>
+                    <p>Temp</p>
+                </li>
+                <li>
+                    <p>Icon</p>
+                    <p>Temp</p>
+                </li>
+                <li>
+                    <p>Icon</p>
+                    <p>Temp</p>
+                </li>
+            </ul>
         </div>
     );
 }

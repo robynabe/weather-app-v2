@@ -1,9 +1,7 @@
 // Main //
-import sunImg from "../images/sun.png";
-import { makeDate } from "../utilities/date";
 import Hourly from "./Hourly";
 import Forecast from "./Forecast";
-import Conversion from "./Conversion";
+import Current from "./Current";
 
 const Main = () => {
     
@@ -22,10 +20,7 @@ const Main = () => {
             </form>
 
             <section className="current-container">
-                <p>{makeDate()}</p>
-                <h1>Current Location</h1>
-                <img src={sunImg} alt="Sun icon" width="80"/>
-                <Conversion/>
+                <Current/>
             </section>
 
             <section className="hourly-container">

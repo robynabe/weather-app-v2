@@ -21,8 +21,13 @@ export const makeDate = () => {
     "Friday",
     "Saturday",
   ];
+
     const today = new Date();
-    return `${days[today.getDay()]} ${months[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+    let minutes = today.getMinutes();
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+    return `${days[today.getDay()]} ${months[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()} ${today.getHours()}:${minutes}`;
 }
 
 export const makeYear = () => {
